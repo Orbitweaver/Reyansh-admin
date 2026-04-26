@@ -1,0 +1,169 @@
+{
+  "theme": "light",
+  "archetype": "4 - Swiss & High-Contrast (Soft Utility Variant)",
+  "colors": {
+    "global": {
+      "background": "#F9FAFB",
+      "surface": "#FFFFFF",
+      "text_primary": "#0F172A",
+      "text_secondary": "#64748B",
+      "border": "#E2E8F0",
+      "border_subtle": "#F1F5F9"
+    },
+    "severity_and_status": {
+      "critical": "#E11D48",
+      "critical_bg": "#FFE4E6",
+      "high": "#EA580C",
+      "high_bg": "#FFEDD5",
+      "medium": "#D97706",
+      "medium_bg": "#FEF3C7",
+      "low": "#059669",
+      "low_bg": "#D1FAE5",
+      "active": "#2563EB",
+      "active_bg": "#DBEAFE",
+      "inactive": "#94A3B8",
+      "inactive_bg": "#F1F5F9"
+    },
+    "role_identities": {
+      "super_admin": {
+        "primary": "#0F172A",
+        "primary_light": "#1E293B",
+        "accent": "#3B82F6",
+        "bg_soft": "#F8FAFC"
+      },
+      "police": {
+        "primary": "#0369A1",
+        "primary_light": "#0EA5E9",
+        "accent": "#38BDF8",
+        "bg_soft": "#F0F9FF"
+      },
+      "ambulance": {
+        "primary": "#C2410C",
+        "primary_light": "#F97316",
+        "accent": "#FB923C",
+        "bg_soft": "#FFF7ED"
+      },
+      "fire": {
+        "primary": "#BE123C",
+        "primary_light": "#E11D48",
+        "accent": "#FB7185",
+        "bg_soft": "#FFF1F2"
+      },
+      "hospital": {
+        "primary": "#047857",
+        "primary_light": "#10B981",
+        "accent": "#34D399",
+        "bg_soft": "#ECFDF5"
+      }
+    }
+  },
+  "typography": {
+    "fonts": {
+      "headings": "Manrope, sans-serif",
+      "body": "Figtree, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "scales": {
+      "h1": "text-4xl sm:text-5xl font-extrabold tracking-tighter leading-none",
+      "h2": "text-2xl sm:text-3xl font-bold tracking-tight leading-tight",
+      "h3": "text-xl sm:text-2xl font-bold tracking-tight",
+      "h4": "text-lg font-semibold tracking-tight",
+      "body_large": "text-base font-medium text-slate-700 leading-relaxed",
+      "body": "text-sm font-normal text-slate-600 leading-relaxed",
+      "small": "text-xs font-medium text-slate-500 uppercase tracking-widest"
+    }
+  },
+  "spacing_and_layout": {
+    "philosophy": "Generous spacing. Avoid clutter, prioritize optical alignment. Utilize full screen estate for data without cramping.",
+    "containers": "max-w-[1600px] mx-auto w-full",
+    "dashboard_grid": "grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-6",
+    "paddings": {
+      "page": "p-6 md:p-8 lg:p-12",
+      "card": "p-5 sm:p-6",
+      "modal": "p-6 sm:p-8"
+    },
+    "radius": {
+      "card": "rounded-xl",
+      "button": "rounded-lg",
+      "badge": "rounded-full",
+      "input": "rounded-lg",
+      "map": "rounded-2xl"
+    },
+    "shadows": {
+      "card": "shadow-[0_2px_10px_-3px_rgba(6,81,237,0.05)]",
+      "hover": "shadow-[0_8px_30px_rgb(0,0,0,0.04)]",
+      "modal": "shadow-[0_20px_50px_rgb(0,0,0,0.1)]",
+      "header": "shadow-sm shadow-slate-200/50"
+    }
+  },
+  "components": {
+    "sidebar": {
+      "style": "bg-white border-r border-slate-200 w-64 flex flex-col h-screen",
+      "items": "flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-medium transition-colors hover:bg-slate-50",
+      "active_state": "bg-role_bg_soft text-role_primary"
+    },
+    "cards": {
+      "base": "bg-white border border-slate-100 rounded-xl overflow-hidden shadow-card transition-shadow hover:shadow-hover",
+      "header": "px-6 py-4 border-b border-slate-50 flex justify-between items-center",
+      "body": "p-6"
+    },
+    "kpi_tiles": {
+      "layout": "flex items-center justify-between p-6 bg-white rounded-xl border border-slate-100 shadow-card",
+      "value": "text-3xl font-bold text-slate-900",
+      "label": "text-sm font-medium text-slate-500 mt-1",
+      "icon_wrapper": "w-12 h-12 rounded-full flex items-center justify-center bg-slate-50 text-slate-600"
+    },
+    "tables": {
+      "wrapper": "w-full overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm",
+      "header": "bg-slate-50/50 text-xs uppercase tracking-widest text-slate-500 font-semibold text-left py-4 px-6 border-b border-slate-200",
+      "row": "border-b border-slate-100 last:border-0 hover:bg-slate-50/50 transition-colors cursor-pointer",
+      "cell": "py-4 px-6 text-sm text-slate-600 font-medium"
+    },
+    "badges": {
+      "base": "inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold",
+      "severity": "Use severity_and_status colors (e.g., bg-[#FFE4E6] text-[#E11D48] for Critical)",
+      "status": "Use active/inactive colors (e.g., bg-[#DBEAFE] text-[#2563EB] for Active)"
+    },
+    "map_container": {
+      "style": "w-full h-full min-h-[400px] rounded-2xl overflow-hidden border border-slate-200 shadow-inner bg-slate-50 relative",
+      "controls": "Mapbox/Leaflet controls should be minimal, top-right aligned. Custom markers based on severity and role.",
+      "overlays": "Use glassmorphism (backdrop-blur-md bg-white/80 border border-white/40) for floating cards over the map"
+    },
+    "modals": {
+      "overlay": "fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-50",
+      "content": "bg-white rounded-2xl shadow-modal w-full max-w-lg mx-auto overflow-hidden animate-in fade-in zoom-in-95 duration-200"
+    }
+  },
+  "interactive_states": {
+    "hover": "Subtle translation (-translate-y-[2px]) on cards, color shifts on buttons (lighter shade of primary)",
+    "focus": "ring-2 ring-offset-2 ring-role_primary outline-none",
+    "active": "scale-[0.98] transition-transform"
+  },
+  "icons_and_assets": {
+    "library": "lucide-react",
+    "usage": "Use stroke-width 1.5 or 2 for a clean, professional look. Avoid solid icons."
+  },
+  "image_urls": {
+    "login_background": {
+      "url": "https://images.unsplash.com/photo-1775755179665-4b605b8d5e1c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODR8MHwxfHNlYXJjaHwxfHxjbGVhbiUyMHdoaXRlJTIwYWJzdHJhY3QlMjBtaW5pbWFsJTIwM2QlMjBncmFwaGljfGVufDB8fHx8MTc3NzIxMzM1N3ww&ixlib=rb-4.1.0&q=85",
+      "description": "Abstract white spiral minimal graphic. Use as the background for the unified Login/Auth screens, preferably with a white/50 backdrop blur overlay.",
+      "category": "backgrounds"
+    },
+    "empty_state_illustration": {
+      "url": "https://images.pexels.com/photos/16149990/pexels-photo-16149990.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Elegant minimalist scene with white geometric shapes. Use inside an img tag with a rounded mask for empty states like 'No Active Incidents' or 'No Patients'.",
+      "category": "illustrations"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Build the UI in light mode exclusively as per the problem statement.",
+    "Use Manrope for all headings and Figtree for body text. Do not use Inter or generic sans.",
+    "Structure the frontend repo with a master layout that handles multi-dashboard routing. Each dashboard (Police, Fire, Ambulance, Hospital, Super Admin) must feel isolated but share the same base component anatomy.",
+    "Inject the specific 'role_identities' colors into the active states and key buttons of each respective dashboard (e.g., Police dashboard uses #0369A1 for active sidebar links and primary buttons).",
+    "For the Leaflet map, style the container with rounded-2xl and a subtle border. Use glassmorphism for any floating cards over the map.",
+    "Use Shadcn UI for standard components but strip away heavy borders; ensure rounded-xl / rounded-lg usage.",
+    "All interactive elements MUST have data-testid attributes formatted as kebab-case and role-based (e.g., data-testid='login-submit-button').",
+    "Do not use card components where a simple flat layout is better. Cards are only for distinct modular widgets or KPI tiles.",
+    "Use Shadcn charts (Recharts) for analytics, applying the role's primary color as the main chart color."
+  ]
+}
