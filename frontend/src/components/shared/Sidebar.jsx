@@ -30,7 +30,7 @@ export default function Sidebar({ role }) {
           <ShieldCheck size={18} strokeWidth={1.75} />
         </div>
         <div className="leading-tight">
-          <p className="font-display text-[15px] font-bold text-slate-900">SafeRoute IIoT</p>
+          <p className="font-display text-[15px] font-bold text-slate-900">Reyansh Technologies</p>
           <p className="text-[11px] font-medium uppercase tracking-widest text-slate-500">
             {meta?.title || "Console"}
           </p>

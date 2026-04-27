@@ -18,9 +18,9 @@ export default function AuthShell({ title, subtitle, children, footer }) {
             <ShieldCheck size={18} strokeWidth={1.75} />
           </div>
           <div className="leading-tight">
-            <p className="font-display text-[15px] font-bold text-slate-900">SafeRoute IIoT</p>
-            <p className="text-[11px] font-medium uppercase tracking-widest text-slate-500">
-              Smart Vehicle Safety & Emergency Response
+            <p className="font-display text-[15px] font-bold text-slate-900">Reyansh Technologies</p>
+            <p className="text-[11px] font-medium pt-2 uppercase tracking-widest text-slate-500">
+              Safety & Emergency Response
             </p>
           </div>
         </div>
@@ -40,7 +40,7 @@ export default function AuthShell({ title, subtitle, children, footer }) {
         </div>
 
         <div className="text-center text-[11px] font-medium uppercase tracking-widest text-slate-400">
-          © 2026 SafeRoute IIoT · Operations
+          © 2026 Reyansh Technologies
         </div>
       </div>
     </div>

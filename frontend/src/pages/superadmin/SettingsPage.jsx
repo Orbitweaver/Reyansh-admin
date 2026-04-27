@@ -19,7 +19,7 @@ export default function SettingsPage() {
           <form className="space-y-4" onSubmit={(e) => { e.preventDefault(); toast.success("Profile saved"); }}>
             <div className="space-y-1.5">
               <Label>Organisation name</Label>
-              <Input defaultValue="SafeRoute IIoT Operations" />
+              <Input defaultValue="Reyansh Technologies" />
             </div>
             <div className="grid grid-cols-2 gap-3">
               <div className="space-y-1.5">

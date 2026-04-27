@@ -1,4 +1,4 @@
-# SafeRoute IIoT — Smart Vehicle Safety & Emergency Response Platform
+# Reyansh Technologies
 
 ## Original Problem Statement
 Build a frontend-only, light-mode multi-dashboard SaaS for an IIoT-based vehicle safety and emergency response system. Includes a Super Admin master console plus separate dashboards for Police, Ambulance (108), Fire Stations, and Hospitals. Each dashboard must feel independent (own sidebar/identity) while sharing one design system. Mock data only.

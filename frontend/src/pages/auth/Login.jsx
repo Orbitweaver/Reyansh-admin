@@ -37,7 +37,7 @@ export default function LoginPage() {
 
   return (
     <AuthShell
-      title="Sign in to SafeRoute"
+      title="Sign in to Reyansh"
       subtitle="Operate with confidence — multi-service emergency console."
       footer={
         <>

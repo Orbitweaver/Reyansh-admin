@@ -114,7 +114,7 @@ function AppRoutes() {
 
 function App() {
   useEffect(() => {
-    document.title = "SafeRoute IIoT · Multi-Service Console";
+    document.title = "Reyansh Technologies";
   }, []);
   return (
     <div className="App">
